@@ -1,0 +1,50 @@
+{
+  "name": "@webship/workspace-worklogs",
+  "version": "1.0.0",
+  "description": "The Worklogs workspace for Webship Workspace: the `worklogs/` folder (type files), its settings file, its 3 commands and its docs, activated as a plugin.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "private": true,
+  "license": "ISC",
+  "repository": "github:webship/workspace-worklogs",
+  "files": [
+    "dist/src",
+    "commands",
+    "config",
+    "docs",
+    "features",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "worklogs",
+    "label": "Worklogs",
+    "workspace": {
+      "key": "worklogs",
+      "settingsTemplate": "config/workspace.worklogs.settings.yml",
+      "files": [
+        "commands/cmd-tool-backup-worklog.sh",
+        "commands/cmd-tool-git-change-filemode-to-false.sh",
+        "commands/cmd-tool-sync-agents.sh"
+      ],
+      "docs": [
+        "docs/AGENTS.md",
+        "docs/CLAUDE.md",
+        "docs/README.md"
+      ]
+    },
+    "features": [
+      "features/worklogs.feature"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship/workspace-plugin-api": "github:webship/workspace-plugin-api#1.0.x",
+    "typescript": "^5.9.0"
+  }
+}
