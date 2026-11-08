@@ -1,4 +1,4 @@
-# @webship/workspace-worklogs
+# @webship.co/workspace-worklogs
 
 The **Worklogs** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `worklogs/` folder (type `files`), its settings file (`core/config/workspace.worklogs.settings.yml`),
