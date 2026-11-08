@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-worklogs",
   "version": "1.0.0-alpha1",
-  "description": "The Worklogs workspace for Webship Workspace: the `worklogs/` folder (type files), its settings file, its 0 commands and its docs, activated as a plugin.",
+  "description": "The Worklogs workspace for Webship Workspace: the `worklogs/` folder (type files), its settings file, its 3 commands and its docs, activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -29,7 +29,11 @@
     "workspace": {
       "key": "worklogs",
       "settingsTemplate": "config/workspace.worklogs.settings.yml",
-      "files": [],
+      "files": [
+        "commands/cmd-tool-backup-worklog.sh",
+        "commands/cmd-tool-git-change-filemode-to-false.sh",
+        "commands/cmd-tool-sync-agents.sh"
+      ],
       "docs": [
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
