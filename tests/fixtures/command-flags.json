@@ -1,0 +1,43 @@
+{
+  "_from": "webship/workspace 1.0.10: core/scripts/args/*.sh and the argparse block of each command of this folder",
+  "_aiFolders": {
+    "cmd-tools-ai-items.sh": [
+      "--add",
+      "--check",
+      "--clone-to",
+      "--confirm",
+      "--fetch",
+      "--filter",
+      "--install",
+      "--list-remote",
+      "--propose",
+      "--pull",
+      "--purpose",
+      "--source",
+      "--status",
+      "--summary",
+      "--to",
+      "--update"
+    ]
+  },
+  "_workspace": [
+    "--help",
+    "--require",
+    "--activate",
+    "--install",
+    "--configure",
+    "--deactivate",
+    "--uninstall",
+    "--check",
+    "--list",
+    "--with-needs",
+    "--permission-mode"
+  ],
+  "cmd-tool-backup-worklog.sh": [],
+  "cmd-tool-git-change-filemode-to-false.sh": [],
+  "cmd-tool-sync-agents.sh": [
+    "--filter",
+    "--install",
+    "--source"
+  ]
+}
