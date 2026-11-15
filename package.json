@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-worklogs",
   "version": "1.0.8",
-  "description": "The Worklogs workspace for Webship Workspace: the `worklogs/` folder (type files), its settings file, its 3 commands and its docs, activated as a plugin.",
+  "description": "The Worklogs workspace for Webship Workspace: the `worklogs/` folder (type files), its settings file, its 3 commands, its docs and its AI items (an agent, a skill, a command and a prompt, each in the folder of its kind), activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -11,6 +11,7 @@
   },
   "files": [
     "dist/src",
+    "ai",
     "commands",
     "config",
     "docs",
@@ -26,6 +27,12 @@
   "workspacePlugin": {
     "name": "worklogs",
     "label": "Worklogs",
+    "needs": [
+      "ai-agents",
+      "ai-skills",
+      "ai-commands",
+      "ai-prompts"
+    ],
     "workspace": {
       "key": "worklogs",
       "settingsTemplate": "config/workspace.worklogs.settings.yml",
@@ -38,6 +45,20 @@
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
         "docs/README.md"
+      ]
+    },
+    "ai": {
+      "agents": [
+        "ai/agents/worklogs-recorder.md"
+      ],
+      "skills": [
+        "ai/skills/worklogs-workflow"
+      ],
+      "commands": [
+        "ai/commands/worklogs-write.md"
+      ],
+      "prompts": [
+        "ai/prompts/worklogs-record-this-session.md"
       ]
     },
     "features": [
