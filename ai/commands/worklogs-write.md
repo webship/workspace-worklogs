@@ -1,5 +1,5 @@
 ---
-description: Write the dated worklog of this session in the worklogs/ folder of the Webship Workspace: what was done, in order, from what was really run and changed, as a new file that is never rewritten.
+description: Write the dated worklog of this session in the worklogs/ folder of the Webship Workspace — what was done, in order, from what was really run and changed, as a new file that is never rewritten.
 argument-hint: '<subject> [date as YYYY-MM-DD]'
 ---
 
