@@ -1,6 +1,6 @@
 {
   "name": "@webship.co/workspace-worklogs",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "The Worklogs workspace for Webship Workspace: the `worklogs/` folder (type files), its settings file, its 3 commands, its docs and its AI items (an agent, a skill, a command and a prompt, each in the folder of its kind), activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
